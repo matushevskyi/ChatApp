@@ -1,0 +1,110 @@
+$sidebar-bg: #3b3e99;
+$contacts-item-active: #f23f79;
+$input-form-bg: #ededfa;
+
+/* COMMON STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+/* LOG IN / SIGN IN FORM */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.form-nav {
+  display: flex;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 5px;
+  background-color: $sidebar-bg;
+}
+
+.login-btn-active {
+  background-color: darken($sidebar-bg, 20%);
+}
+
+.form-login,
+.form-signin {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.user-email-input,
+.user-pass-input {
+  display: flex;
+  font-size: 0.75rem;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: $input-form-bg;
+  transition: all 0.2s ease;
+}
+
+.form-login .user-pass-input {
+  margin-bottom: 5px;
+}
+
+.forgot-pass {
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: $sidebar-bg;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  transition: opacity 0.2s ease;
+}
+
+.submit-form-data {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: $contacts-item-active;
+  cursor: pointer;
+}
