@@ -1,0 +1,121 @@
+$sidebar-bg: #3b3e99;
+$contacts-item-active: #f23f79;
+$input-form-bg: #ededfa;
+$incoming-message-bg: #989ad7;
+
+/* COMMON STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: $sidebar-bg;
+}
+
+/* FORM STYLES */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.form-tab {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 20px;
+  background-color: $incoming-message-bg;
+}
+
+.login-form {
+  width: 100%;
+  order: 1;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+input[type=radio], .login-form {
+  display: none;
+}
+
+input[type=radio]:checked + .form-tab {
+  background-color: #fff;
+  color: $sidebar-bg;
+}
+input[type=radio]:checked + .form-tab + .login-form {
+  display: flex;
+}
+
+.user-email-input,
+.user-pass-input {
+  display: flex;
+  font-size: 0.75rem;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: $input-form-bg;
+}
+
+.user-email-input:focus,
+.user-pass-input:focus {
+  border: 1px solid $incoming-message-bg;
+}
+
+#login-user-password {
+  margin-bottom: 5px;
+}
+
+.forgot-pass {
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: $sidebar-bg;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: $contacts-item-active;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: darken($contacts-item-active, 15);
+}
