@@ -23,4 +23,8 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('clearcache', function () {
+    return cache.clearAll();
+});
+
 gulp.task('default', ['serve']);
