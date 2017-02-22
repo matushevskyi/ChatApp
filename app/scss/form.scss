@@ -1,18 +1,5 @@
-$sidebar-bg: #3b3e99;
-$contacts-item-active: #f23f79;
-$input-form-bg: #ededfa;
-$incoming-message-bg: #989ad7;
-
-/* COMMON STYLES */
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-}
+@import "_variables.scss";
+@import "_common.scss";
 
 body {
   display: flex;
@@ -20,7 +7,7 @@ body {
   background-color: $sidebar-bg;
 }
 
-/* FORM STYLES */
+// Form styles
 
 .form-container {
   display: flex;
@@ -92,10 +79,9 @@ input[type=radio]:checked + .form-tab + .login-form {
 .forgot-pass {
   display: flex;
   flex-direction: row-reverse;
-  text-decoration: none;
   font-size: 0.75rem;
   color: $sidebar-bg;
-  padding-right: 15px;
+  padding: 5px 15px 5px 5px;
   margin-bottom: 20px;
 }
 

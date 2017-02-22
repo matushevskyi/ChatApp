@@ -1,0 +1,128 @@
+// Chat styles
+
+.chat-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom: 1px solid $outcoming-message-bg;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0 30px;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.chat-messages p {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 24px;
+  border-radius: 10px;
+}
+
+.incoming-message {
+
+  flex-direction: row;
+  align-self: flex-start;
+  display: flex;
+  flex-shrink: 0;
+  max-width: 500px;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.outcoming-message {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  display: flex;
+  flex-shrink: 0;
+  max-width: 500px;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.incoming-message p {
+  color: #fff;
+  background-color: $incoming-message-bg;
+  margin-left: 20px;
+}
+
+.outcoming-message p {
+  color: #424242;
+  background-color: $outcoming-message-bg;
+  margin-right: 20px;
+}
+
+.incoming-message time {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  display: flex;
+  font-size: 0.875rem;
+  color: $incoming-message-bg;
+}
+
+.outcoming-message time {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  font-size: 0.875rem;
+  color: $incoming-message-bg;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  flex-shrink: 0;
+  border-top: 1px solid $outcoming-message-bg;;
+}
+
+.text-form {
+  @extend .search-form;
+}
+
+#text-input {
+  @extend #search-input;
+}
+
+#message-btn {
+  @extend #search-btn;
+}
+
+.add-file {
+  width: 20px;
+  height: 20px;
+  font-size: 1.25rem;
+  color: $incoming-message-bg;
+  cursor: pointer;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.add-file:hover,
+#message-btn:hover {
+  color: $sidebar-bg;
+}
+
+#file-btn {
+  display: none;
+}
