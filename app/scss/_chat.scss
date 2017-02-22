@@ -3,10 +3,18 @@
 .chat-header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border-bottom: 1px solid $outcoming-message-bg;
   height: 80px;
   flex-shrink: 0;
+}
+
+.chat-header p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $incoming-message-bg;
 }
 
 .message-list {
@@ -97,15 +105,15 @@
 }
 
 .text-form {
-  @extend .search-form;
+  @include form;
 }
 
 #text-input {
-  @extend #search-input;
+  @include input;
 }
 
 #message-btn {
-  @extend #search-btn;
+  @include button;
 }
 
 .add-file {

@@ -1,5 +1,28 @@
 //Sidebar styles
 
+@media (max-width: 640px) {
+
+  .sidebar {
+    max-width: 90px!important;
+  }
+
+  .sidebar-header,
+  .contacts-item {
+    width: 90px!important;
+  }
+
+  #menu-btn,
+  .search-form,
+  .user-details,
+  .user-status {
+    display: none!important;
+  }
+
+  .chat {
+    max-width: 100%;
+  }
+}
+
 .menu {
   display: none;
   position: absolute;
@@ -45,38 +68,15 @@
 }
 
 .search-form {
-  display: flex;
-  flex: 1;
-  margin-left: 20px;
-  margin-right: 20px;
+  @include form;
 }
 
 #search-input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding: 10px 40px 10px 20px;
-  font-size: 0.75rem;
-  background-color: $outcoming-message-bg;
-  resize: none;
-  line-height: 1rem;
+  @include input;
 }
 
 #search-btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: $outcoming-message-bg;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-  color: $incoming-message-bg;
-  font-size: 1.25rem;
+  @include button;
 }
 
 #search-btn:hover {
@@ -86,6 +86,7 @@
 .contacts-list{
   flex:1;
   background-color: $sidebar-bg;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -96,7 +97,7 @@
   padding: 0;
 }
 
-.contacnts-item {
+.contacts-item {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
@@ -105,19 +106,19 @@
   transition: background-color 0.2s ease;
 }
 
-.contacnts-item:hover {
+.contacts-item:hover {
   background-color: darken($sidebar-bg, 20);
 }
 
-.contacnts-item-active {
+.contacts-item-active {
   background-color: $contacts-item-active;
 }
 
-.contacnts-item-active:hover {
+.contacts-item-active:hover {
   background-color: $contacts-item-active;
 }
 
-.contacnts-item-active .user-status {
+.contacts-item-active .user-status {
   color: $contacts-item-active;
   background-color: #fff;
 }
