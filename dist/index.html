@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ChatApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://use.fontawesome.com/29569b5fe8.css" rel="stylesheet">
+        <link href="css/app.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Header -->
+                <header class="sidebar-header">
+                    <div id="sidebar-toggle-btn">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                    <form role="search" class="search-form">
+                        <input type="text" placeholder="Search contact..." id="search-input">
+                        <button type="submit" id="search-btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    <div id="menu-btn">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </header>
+                <!-- Menu -->
+                <div class="menu"></div>
+                <!-- Contacts -->
+                <div class="contacts-list">
+                    <ul class="contacts">
+                        <li class="contacts-item">
+                            <a href="#">
+                                <div class="userpic">
+                                    <div class="user-img"></div>
+                                    <div class="user-message-badge">1</div>
+                                </div>
+                                <div class="user-details">
+                                    <p class="user-name">Yaroslav Matushevskyi</p>
+                                    <p class="user-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="user-status">52 m</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- Chat -->
+            <section class="chat">
+                <!-- Header -->
+                <header class="chat-header">
+                    <p>ChatApp</p>
+                </header>
+                <!-- Messages -->
+                <div class="message-list">
+                    <ul class="chat-messages">
+                        <li class="incoming-message">
+                            <div class="userpic">
+                                <div class="user-img"></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Sequi rerum expedita impedit est similique in consectetur nisi magnam debitis,
+                                odit autem doloribus aliquid dolorum aperiam vitae dolores eaque, esse accusamus?
+                            </p>
+                            <time>13:58</time>
+                        </li>
+                        <li class="outcoming-message">
+                            <div class="userpic">
+                                <div class="user-img"></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <time>13:58</time>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Input form -->
+                <footer class="message-form">
+                    <form class="text-form">
+                        <textarea id="text-input" placeholder="Type message..."></textarea>
+                        <button type="submit" id="message-btn">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </button>
+                        <label for="file-btn" class="add-file">
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                            <input type="file" id="file-btn">
+                        </label>
+                    </form>
+                </footer>
+            </section>
+        </div>
+    <script src="js/app.min.js"></script>
+    </body>
+</html>
