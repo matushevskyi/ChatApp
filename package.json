@@ -1,25 +1,28 @@
 {
-  "name": "chatapp",
+  "name": "test",
   "version": "1.0.0",
-  "description": "chat application",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matushevskyi/ChatApp.git"
-  },
-  "author": "Yaroslav Matushevskyi",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matushevskyi/ChatApp/issues"
-  },
-  "homepage": "https://github.com/matushevskyi/ChatApp#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "babel-preset-es2015": "^6.18.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-babel": "^6.1.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglyfly": "^1.4.2",
+    "imagemin-pngquant": "^5.0.0"
   }
 }

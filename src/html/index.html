@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        //= templates/head.html
+    </head>
+    <body>
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Header -->
+                //= templates/sidebar-header.html
+                <!-- Menu -->
+                //= templates/menu.html
+                <!-- Contacts -->
+                <div class="contacts-list">
+                    <ul class="contacts">
+                        //= templates/contacts-item.html
+                    </ul>
+                </div>
+            </aside>
+            <!-- Chat -->
+            <section class="chat">
+                <!-- Header -->
+                //= templates/chat-header.html
+                <!-- Messages -->
+                <div class="message-list">
+                    <ul class="chat-messages">
+                        //= templates/incoming-message.html
+                        //= templates/outcoming-message.html
+                    </ul>
+                </div>
+                <!-- Input form -->
+                <footer class="message-form">
+                    //= templates/message-form.html
+                </footer>
+            </section>
+        </div>
+    <script src="js/app.min.js"></script>
+    </body>
+</html>

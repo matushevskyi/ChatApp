@@ -1,8 +1,9 @@
-@import "_variables";
-@import "mixins";
-@import "common";
-@import "sidebar";
-@import "chat";
+@import "includes/variables";
+@import "includes/mixins";
+@import "includes/global";
+@import "includes/form";
+@import "includes/sidebar";
+@import "includes/chat";
 
 //Layout styles
 
